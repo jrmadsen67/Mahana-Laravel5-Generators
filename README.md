@@ -1,2 +1,2 @@
-# generate
-Refactored Laravel Generator code
+# Mahana Laravel5 Generators
+Laravel5 Generator generator extensions
