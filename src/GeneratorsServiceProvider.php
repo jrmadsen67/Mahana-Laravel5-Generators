@@ -20,13 +20,13 @@ class GeneratorsServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->registerSeedGenerator();
+		$this->registerModelGenerator();
 	}
 
 	/**
 	 * Register the make:model generator.
 	 */
-	private function registerSeedGenerator() {
+	private function registerModelGenerator() {
 		$this->app->singleton('command.jrmadsen67.model', function ($app) {
 			return $app['jrmadsen67\MahanaGenerators\Commands\ModelMakeCommand'];
 		});
