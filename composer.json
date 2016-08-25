@@ -1,0 +1,34 @@
+{
+    "name": "jrmadsen67/MahanaGenerator",
+    "type": "library",
+    "description": "Generator Extensions for Laravel5",
+    "keywords": ["laravel", "generator"],
+    "homepage": "https://github.com/jrmadsen67/Mahana-Laravel5-Generators",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Madsen",
+            "email": "jrmadsen67@gmail.com",
+            "homepage": "https://github.com/jrmadsen67",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "jrmadsen67\\MahanaGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "jrmadsen67\\MahanaGenerator\\Test\\": "tests/"
+        }
+    }
+}
