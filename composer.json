@@ -1,9 +1,9 @@
 {
-    "name": "jrmadsen67/MahanaGenerator",
+    "name": "jrmadsen67/mahana-laravel5-generators",
     "type": "library",
     "description": "Generator Extensions for Laravel5",
     "keywords": ["laravel", "generator"],
-    "homepage": "https://github.com/jrmadsen67/Mahana-Laravel5-Generators",
+    "homepage": "https://github.com/jrmadsen67/mahana-laravel5-generators",
     "license": "MIT",
     "authors": [
         {
