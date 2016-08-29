@@ -52,7 +52,7 @@ class ModelMakeCommand extends BaseGeneratorCommand {
 	protected function getStub() {
 
 	    $config = $this->option('stub') ? $this->option('stub') : 'model_default';
-        
+
         return config('mahana-generators.' . $config);
 	}
 
