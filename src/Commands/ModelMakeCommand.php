@@ -50,7 +50,10 @@ class ModelMakeCommand extends BaseGeneratorCommand {
 	 * @return string
 	 */
 	protected function getStub() {
-		return __DIR__ . '/../stubs/model.stub';
+
+	    $config = $this->option('stub') ? $this->option('stub') : 'model_default';
+        
+        return config('mahana-generators.' . $config);
 	}
 
 	protected function replaceTable(&$stub) {
@@ -118,6 +121,7 @@ class ModelMakeCommand extends BaseGeneratorCommand {
 			['primary', 'p', InputOption::VALUE_OPTIONAL, 'Specify pk field for table', null],
 			['fillable', 'f', InputOption::VALUE_OPTIONAL, 'List fillable fields separated by commas', null],
 			['dates', 'd', InputOption::VALUE_OPTIONAL, 'List Carbon date fields separated by commas', null],
+            ['stub', 's', InputOption::VALUE_OPTIONAL, 'Config key for stub file', null],
 		];
 	}
 
